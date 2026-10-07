@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<!-- Askarova Zeinep -->
+<html lang="ru">
+<head><!-- Bootstrap 5.3.8 via jsDelivr; project overrides are loaded immediately after Bootstrap. -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Каталог выставочных залов Военно-исторического музея Вооружённых Сил Республики Казахстан с рекомендуемым маршрутом." name="description"/>
+<meta content="Askarova Zeinep" name="author"/>
+<title>Залы и экспозиции — Военно-исторический музей</title>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/><link href="../css/zeinep-bootstrap.css" rel="stylesheet"/></head>
+<body class="museum-site" id="top">
+<header class="site-header">
+<p class="skip-wrap container"><a class="skip-link link-light" href="#main">Перейти к содержимому</a></p>
+
+<nav aria-label="Язык" class="language-nav container-fluid py-2">
+<ul class="language-list nav nav-pills nav-sm">
+<li class="nav-item"><a class="nav-link btn btn-outline-secondary btn-sm py-1 px-2" href="../en/exhibits.html" hreflang="en" lang="en">English</a></li>
+<li class="nav-item"><a aria-current="true" class="nav-link btn btn-outline-secondary btn-sm py-1 px-2" href="../ru/exhibits.html" hreflang="ru" lang="ru">Русский</a></li>
+<li class="nav-item"><a class="nav-link btn btn-outline-secondary btn-sm py-1 px-2" href="../kk/exhibits.html" hreflang="kk" lang="kk">Қазақша</a></li>
+</ul>
+</nav>
+<!-- Why: one nested list, with the halls folded into <details>, keeps all 17 pages reachable from every page without any JavaScript or CSS -->
+<nav aria-label="Основная навигация" class="navbar navbar-expand-lg navbar-dark museum-navbar"><div class="container"><a class="navbar-brand fw-semibold" href="index.html">Военно-исторический музей Вооружённых Сил Республики Казахстан</a><button aria-controls="museumNavbar" aria-expanded="false" aria-label="Переключить навигацию" class="navbar-toggler" data-bs-target="#museumNavbar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="museumNavbar"><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link" href="about.html">О музее</a></li><li class="nav-item dropdown"><button aria-expanded="false" class="nav-link dropdown-toggle btn btn-link" data-bs-toggle="dropdown" id="halls-menu-button" type="button">Залы</button><ul class="dropdown-menu"><li><a aria-current="page" class="dropdown-item" href="exhibits.html">Залы и экспозиции</a></li><li><a class="dropdown-item" href="atrium.html">Атриум «Мәңгілік Ел»</a></li><li><a class="dropdown-item" href="ancient.html">Древность – XIX век</a></li><li><a class="dropdown-item" href="20th.html">Военная история XX века</a></li><li><a class="dropdown-item" href="modern.html">Вооружённые Силы Казахстана</a></li><li><a class="dropdown-item" href="tank.html">История танковых войск</a></li><li><a class="dropdown-item" href="weapons.html">Оружие XX–XXI веков</a></li><li><a class="dropdown-item" href="formations.html">Воинские формирования и части</a></li><li><a class="dropdown-item" href="arts.html">Изобразительное искусство</a></li><li><a class="dropdown-item" href="temporary.html">Временные выставки</a></li><li><a class="dropdown-item" href="outdoor.html">Военная техника под открытым небом</a></li></ul></li><li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li><li class="nav-item"><a class="nav-link" href="history.html">История</a></li><li class="nav-item"><a class="nav-link" href="visit.html">Посещение</a></li><li class="nav-item"><a class="nav-link" href="colophon.html">О проекте</a></li></ul></div></div></nav>
+</header>
+<!-- Bootstrap .container keeps reading content centered; .container-fluid on the language switcher stays edge-to-edge. --><main class="page-main container site-main py-4" id="main">
+<article class="page-content">
+<h1 class="page-title display-5 fw-bold mb-3 text-center text-md-start">Залы и экспозиции</h1>
+<p class="page-lead lead text-secondary text-center text-lg-start">Десять остановок — от атриума до площадки под открытым небом. Выберите зал, чтобы открыть его страницу.</p>
+<section class="content-section mb-5" id="search-section">
+<h2 class="h2 border-bottom pb-2 mb-3">Найти зал</h2>
+<p>Введите часть названия зала, чтобы сузить список, или откройте любой зал ниже.</p>
+<form action="exhibits.html" method="get" id="hall-search-form" role="search" class="row g-2 mb-3">
+<div class="col-12 col-sm"><label class="form-label visually-hidden" for="search-input">Название зала</label><input class="form-control" id="search-input" name="q" type="search" autocomplete="off" placeholder="Название зала"></div>
+<div class="col-12 col-sm-auto"><button class="btn btn-primary" id="search-button" type="submit">Найти</button></div>
+</form>
+<p id="search-status" class="small text-secondary" role="status"></p>
+<ul class="list-group mb-3" id="results-container">
+<li class="list-group-item search-item" data-hall="атриум «мәңгілік ел»"><a href="atrium.html">Атриум «Мәңгілік Ел»</a></li>
+<li class="list-group-item search-item" data-hall="древность – xix век"><a href="ancient.html">Древность – XIX век</a></li>
+<li class="list-group-item search-item" data-hall="военная история xx века"><a href="20th.html">Военная история XX века</a></li>
+<li class="list-group-item search-item" data-hall="вооружённые силы казахстана"><a href="modern.html">Вооружённые Силы Казахстана</a></li>
+<li class="list-group-item search-item" data-hall="история танковых войск"><a href="tank.html">История танковых войск</a></li>
+<li class="list-group-item search-item" data-hall="оружие xx–xxi веков"><a href="weapons.html">Оружие XX–XXI веков</a></li>
+<li class="list-group-item search-item" data-hall="воинские формирования и части"><a href="formations.html">Воинские формирования и части</a></li>
+<li class="list-group-item search-item" data-hall="изобразительное искусство"><a href="arts.html">Изобразительное искусство</a></li>
+<li class="list-group-item search-item" data-hall="временные выставки"><a href="temporary.html">Временные выставки</a></li>
+<li class="list-group-item search-item" data-hall="военная техника под открытым небом"><a href="outdoor.html">Военная техника под открытым небом</a></li>
+</ul>
+<div id="no-results-message" class="alert alert-warning error hidden" role="status">Ни один зал не подходит. Очистите поле, чтобы увидеть все залы.</div>
+</section>
+<section class="content-section mb-5">
+<h2 class="h2 border-bottom pb-2 mb-3">Осмотр музея по залам</h2>
+<p>Структура следует описаниям музея, опубликованным Visit Astana и e-Museum.</p>
+<aside>
+<p><strong>Почему десять остановок, а не семь?</strong>
+Visit Astana насчитывает семь выставочных залов и площадку под открытым небом. В этом путеводителе атриум, зал временных выставок и открытая площадка получили отдельные страницы, поэтому цифры в источниках различаются.</p>
+</aside>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3"><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="atrium.html"><img alt="Атриум с бронзовым монументом «Мәңгілік Ел»: пять воинов вокруг карты в резной каменной раме, по бокам фигуры воинов" class="site-image img-fluid" height="212" loading="lazy" src="../images/thumbs/atrium-mangilik-el.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">1. Атриум «Мәңгілік Ел»</h3>
+
+<p>Сердце здания: бронзовый монумент, связывающий воинов древности с сегодняшними вооружёнными силами.</p>
+<p><a href="atrium.html">Открыть страницу</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="ancient.html"><img alt="Фигура воина в пластинчатых доспехах с длинным копьём, круглый щит с золотым крылатым существом и луки" class="site-image img-fluid" height="210" loading="lazy" src="../images/thumbs/armoured-warrior-spear.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">2. Древность – XIX век</h3>
+
+<p>Доспехи, луки, шлемы и погребение коня из военного мира степи.</p>
+<p><a href="ancient.html">Открыть страницу</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="20th.html"><img alt="Экспозиция «Сталинград»: фотографии, карта, каски и полевое снаряжение за стеклом" class="site-image img-fluid" height="208" loading="lazy" src="../images/thumbs/stalingrad-case.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">3. Военная история XX века</h3>
+
+<p>Алашский период, Великая Отечественная война и война в Афганистане.</p>
+<p><a href="20th.html">Открыть страницу</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="modern.html"><img alt="Общий вид реконструированного кабинета: деревянный стол, зелёные стулья, синие шторы и флаг Казахстана" class="site-image img-fluid" height="212" loading="lazy" src="../images/thumbs/officer-office-b.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">4. Вооружённые Силы Казахстана</h3>
+
+<p>От создания вооружённых сил в 1992 году до современных сухопутных, противовоздушных и военно-морских сил.</p>
+<p><a href="modern.html">Открыть страницу</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="tank.html"><img alt="Большая рельефная карта за красным канатом: модели танков среди нарисованных линий боя и дат" class="site-image img-fluid" height="212" loading="lazy" src="../images/thumbs/relief-map-tanks.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">5. История танковых войск</h3>
+
+<p>Бронетанковая война, рельефная карта сражения и интерактивная презентация.</p>
+<p><a href="tank.html">Открыть страницу</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="weapons.html"><img alt="Стеклянная витрина с пулемётами, автоматами, длинным противотанковым ружьём и снарядом рядом с фотографиями солдат" class="site-image img-fluid" height="212" loading="lazy" src="../images/thumbs/machine-guns-case.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">6. Оружие XX–XXI веков</h3>
+
+<p>Пулемёты, противотанковое оружие, авиационное оборудование и модели военной техники.</p>
+<p><a href="weapons.html">Открыть страницу</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="formations.html"><img alt="Витрина Второй мировой войны: ряды портретов солдат, винтовки, каска и документы" class="site-image img-fluid" height="210" loading="lazy" src="../images/thumbs/wwii-heroes-case.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">7. Воинские формирования и части</h3>
+
+<p>Как формировались дивизии и бригады в Казахстане и как изучается их история.</p>
+<p><a href="formations.html">Открыть страницу</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="arts.html"><img alt="Картина маслом в раме: солдат в шинели и сапогах на снежном фоне" class="site-image img-fluid" height="317" loading="lazy" src="../images/thumbs/portrait-greatcoat.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">8. Изобразительное искусство</h3>
+
+<p>Живопись, графика и скульптура на тему защиты Родины.</p>
+<p><a href="arts.html">Открыть страницу</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="temporary.html"><img alt="Синий баннер над входом в музей с надписями «Әскери-тарихи музей» и «Военно-исторический музей»" class="site-image img-fluid" height="209" loading="lazy" src="../images/thumbs/entrance-banner.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">9. Временные выставки</h3>
+
+<p>Меняющаяся программа особых коллекций в отдельном зале.</p>
+<p><a href="temporary.html">Открыть страницу</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="outdoor.html"><img alt="Зенитная ракетная установка с четырьмя ракетами, направленными в облачное небо" class="site-image img-fluid" height="210" loading="lazy" src="../images/thumbs/sam-launcher.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">10. Военная техника под открытым небом</h3>
+
+<p>Ракеты, катера и бронетехника под открытым небом.</p>
+<p><a href="outdoor.html">Открыть страницу</a></p>
+</div></article></div></div>
+
+
+
+
+
+
+
+
+
+</section>
+<section class="content-section mb-5">
+<div class="table-responsive my-3"><table class="table table-striped table-bordered align-middle">
+<caption>Основные выставочные направления</caption>
+<thead>
+<tr>
+<th scope="col">№</th>
+<th scope="col">Экспозиция</th>
+<th scope="col">Основная тема</th>
+<th scope="col">Страница</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">1</th>
+<td>Атриум «Мәңгілік Ел»</td>
+<td>Историческая преемственность и военное наследие</td>
+<td><a href="atrium.html">Открыть зал</a></td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td>Древность – XIX век</td>
+<td>Древнее оружие, археология и военные традиции</td>
+<td><a href="ancient.html">Открыть зал</a></td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td>Военная история XX века</td>
+<td>Алашский период, Вторая мировая война и Афганистан</td>
+<td><a href="20th.html">Открыть зал</a></td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td>Вооружённые Силы Казахстана</td>
+<td>Создание и развитие Вооружённых Сил независимого Казахстана</td>
+<td><a href="modern.html">Открыть зал</a></td>
+</tr>
+<tr>
+<th scope="row">5</th>
+<td>История танковых войск</td>
+<td>Бронетанковые войска и танковые сражения</td>
+<td><a href="tank.html">Открыть зал</a></td>
+</tr>
+<tr>
+<th scope="row">6</th>
+<td>Оружие XX–XXI веков</td>
+<td>Стрелковое оружие, военная техника и модели вооружения</td>
+<td><a href="weapons.html">Открыть зал</a></td>
+</tr>
+<tr>
+<th scope="row">7</th>
+<td>Воинские формирования и части</td>
+<td>Военные организации и воинские формирования</td>
+<td><a href="formations.html">Открыть зал</a></td>
+</tr>
+<tr>
+<th scope="row">8</th>
+<td>Изобразительное искусство</td>
+<td>Живопись, графика и скульптура</td>
+<td><a href="arts.html">Открыть зал</a></td>
+</tr>
+<tr>
+<th scope="row">9</th>
+<td>Временные выставки</td>
+<td>Сменные выставки и особые коллекции</td>
+<td><a href="temporary.html">Открыть зал</a></td>
+</tr>
+<tr>
+<th scope="row">10</th>
+<td>Военная техника под открытым небом</td>
+<td>Крупногабаритная военная техника</td>
+<td><a href="outdoor.html">Открыть площадку</a></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section class="content-section mb-5">
+<h2 class="h2 border-bottom pb-2 mb-3">Рекомендуемый маршрут</h2>
+<p>Залы расположены в хронологическом порядке, поэтому проще всего идти по ним по порядку.</p>
+<ol>
+<li><strong><a href="atrium.html">Начните с входа и атриума</a></strong><br/>Познакомьтесь с монументом «Мәңгілік Ел» под куполом.</li>
+<li><strong><a href="ancient.html">Изучите военную историю древности</a></strong><br/>Доспехи, луки и погребение коня из степи.</li>
+<li><strong><a href="20th.html">Перейдите к XX веку</a></strong><br/>Алаш, Великая Отечественная война и Афганистан.</li>
+<li><strong><a href="modern.html">Узнайте о Вооружённых Силах независимого Казахстана</a></strong><br/>Сухопутные войска, ПВО и военно-морские силы.</li>
+<li><strong><a href="tank.html">Осмотрите экспозиции танков и оружия</a></strong><br/>Рельефная карта сражения, пулемёты и полевое орудие.</li>
+<li><strong><a href="arts.html">Завершите визит изобразительным искусством, временными выставками и площадкой техники</a></strong><br/>Затем выйдите на улицу к ракетам, катерам и бронетехнике.</li>
+</ol>
+</section>
+</article>
+</main>
+<!-- Why: contacts are repeated in the footer of every page so a visitor never has to go back to the visit page to find the phone number -->
+<footer class="site-footer py-4"><div class="container"><div class="row g-4"><section class="col-12 col-md-4"><h2>Военно-исторический музей</h2><address>
+Вооружённые Силы Республики Казахстан<br/>
+Район площади Республики, Астана, Казахстан<br/>
+Телефон: <a href="tel:+77172919035">+7 (7172) 91-90-35</a>
+</address></section><nav aria-label="Footer navigation" class="col-12 col-md-4"><!-- This row is nested inside a footer column; the nested grid aligns links without changing the semantic footer navigation. --><h2>Разделы</h2><ul class="row row-cols-2 g-2 list-unstyled">
+<li class="col"><a class="d-block" href="index.html">Главная</a></li>
+<li class="col"><a class="d-block" href="about.html">О музее</a></li>
+<li class="col"><a class="d-block" href="exhibits.html">Залы и экспозиции</a></li>
+<li class="col"><a class="d-block" href="gallery.html">Галерея</a></li>
+<li class="col"><a class="d-block" href="history.html">Военная история</a></li>
+<li class="col"><a class="d-block" href="visit.html">Планирование визита</a></li>
+<li class="col"><a class="d-block" href="colophon.html">О проекте</a></li>
+</ul></nav><section class="col-12 col-md-4"><h2>Важно знать</h2><p>Открыто со вторника по воскресенье, 10:00–18:00 (понедельник — выходной). Вход 500 ₸. Перед поездкой позвоните в музей.</p><p><small>© 2026 Askarova Zeinep. Независимый учебный сайт — не официальный сайт музея.</small></p></section></div></div></footer>
+<p class="back-top-wrap position-fixed bottom-0 end-0 m-3"><a class="btn btn-outline-secondary shadow-sm back-to-top" href="#top">Наверх ↑</a></p><script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>

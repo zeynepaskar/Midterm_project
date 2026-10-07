@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<!-- Askarova Zeinep -->
+<html lang="en">
+<head><!-- Bootstrap 5.3.8 via jsDelivr; project overrides are loaded immediately after Bootstrap. -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Catalogue of exhibition halls at the Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan, with a suggested visitor route." name="description"/>
+<meta content="Askarova Zeinep" name="author"/>
+<title>Halls and Exhibitions — Military-Historical Museum</title>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/><link href="../css/zeinep-bootstrap.css" rel="stylesheet"/></head>
+<body class="museum-site" id="top">
+<header class="site-header">
+<p class="skip-wrap container"><a class="skip-link link-light" href="#main">Skip to content</a></p>
+
+<nav aria-label="Language" class="language-nav container-fluid py-2">
+<ul class="language-list nav nav-pills nav-sm">
+<li class="nav-item"><a aria-current="true" class="nav-link btn btn-outline-secondary btn-sm py-1 px-2" href="../en/exhibits.html" hreflang="en" lang="en">English</a></li>
+<li class="nav-item"><a class="nav-link btn btn-outline-secondary btn-sm py-1 px-2" href="../ru/exhibits.html" hreflang="ru" lang="ru">Русский</a></li>
+<li class="nav-item"><a class="nav-link btn btn-outline-secondary btn-sm py-1 px-2" href="../kk/exhibits.html" hreflang="kk" lang="kk">Қазақша</a></li>
+</ul>
+</nav>
+<nav aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark museum-navbar"><div class="container"><a class="navbar-brand fw-semibold" href="index.html">Military-Historical Museum of the Armed Forces of the Republic of Kazakhstan</a><button aria-controls="museumNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#museumNavbar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="museumNavbar"><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item dropdown"><button aria-expanded="false" class="nav-link dropdown-toggle btn btn-link" data-bs-toggle="dropdown" id="halls-menu-button" type="button">Halls</button><ul class="dropdown-menu"><li><a aria-current="page" class="dropdown-item" href="exhibits.html">Halls &amp; Exhibitions</a></li><li><a class="dropdown-item" href="atrium.html">Atrium “Mangilik El”</a></li><li><a class="dropdown-item" href="ancient.html">Antiquity – XIX Century</a></li><li><a class="dropdown-item" href="20th.html">Military History of the XX Century</a></li><li><a class="dropdown-item" href="modern.html">Armed Forces of Kazakhstan</a></li><li><a class="dropdown-item" href="tank.html">History of Tank Troops</a></li><li><a class="dropdown-item" href="weapons.html">Weapons of the XX–XXI Centuries</a></li><li><a class="dropdown-item" href="formations.html">Military Formations and Units</a></li><li><a class="dropdown-item" href="arts.html">Visual Arts</a></li><li><a class="dropdown-item" href="temporary.html">Temporary Exhibitions</a></li><li><a class="dropdown-item" href="outdoor.html">Outdoor Military Equipment</a></li></ul></li><li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li><li class="nav-item"><a class="nav-link" href="history.html">History</a></li><li class="nav-item"><a class="nav-link" href="visit.html">Plan a Visit</a></li><li class="nav-item"><a class="nav-link" href="colophon.html">Project</a></li></ul></div></div></nav>
+</header>
+<!-- Bootstrap .container keeps reading content centered; .container-fluid on the language switcher stays edge-to-edge. --><main class="page-main container site-main py-4" id="main">
+<article class="page-content">
+<h1 class="page-title display-5 fw-bold mb-3 text-center text-md-start">Halls and Exhibitions</h1>
+<p class="page-lead lead text-secondary text-center text-lg-start">Ten stops from the atrium to the open-air pavilion. Choose a hall to open its page.</p>
+<section class="content-section mb-5" id="search-section">
+<h2 class="h2 border-bottom pb-2 mb-3">Find a hall</h2>
+<p>Type part of a hall name to narrow the list, or open any hall below.</p>
+<form action="exhibits.html" method="get" id="hall-search-form" role="search" class="row g-2 mb-3">
+<div class="col-12 col-sm"><label class="form-label visually-hidden" for="search-input">Hall name</label><input class="form-control" id="search-input" name="q" type="search" autocomplete="off" placeholder="Hall name"></div>
+<div class="col-12 col-sm-auto"><button class="btn btn-primary" id="search-button" type="submit">Search</button></div>
+</form>
+<p id="search-status" class="small text-secondary" role="status"></p>
+<ul class="list-group mb-3" id="results-container">
+<li class="list-group-item search-item" data-hall="atrium “mangilik el”"><a href="atrium.html">Atrium “Mangilik El”</a></li>
+<li class="list-group-item search-item" data-hall="antiquity – xix century"><a href="ancient.html">Antiquity – XIX Century</a></li>
+<li class="list-group-item search-item" data-hall="military history of the xx century"><a href="20th.html">Military History of the XX Century</a></li>
+<li class="list-group-item search-item" data-hall="armed forces of kazakhstan"><a href="modern.html">Armed Forces of Kazakhstan</a></li>
+<li class="list-group-item search-item" data-hall="history of tank troops"><a href="tank.html">History of Tank Troops</a></li>
+<li class="list-group-item search-item" data-hall="weapons of the xx–xxi centuries"><a href="weapons.html">Weapons of the XX–XXI Centuries</a></li>
+<li class="list-group-item search-item" data-hall="military formations and units"><a href="formations.html">Military Formations and Units</a></li>
+<li class="list-group-item search-item" data-hall="visual arts"><a href="arts.html">Visual Arts</a></li>
+<li class="list-group-item search-item" data-hall="temporary exhibitions"><a href="temporary.html">Temporary Exhibitions</a></li>
+<li class="list-group-item search-item" data-hall="outdoor military equipment"><a href="outdoor.html">Outdoor Military Equipment</a></li>
+</ul>
+<div id="no-results-message" class="alert alert-warning error hidden" role="status">No hall matches your search. Clear the field to see all halls.</div>
+</section>
+<section class="content-section mb-5">
+<h2 class="h2 border-bottom pb-2 mb-3">Explore the museum by hall</h2>
+<p>The structure follows the museum descriptions published by Visit Astana and e-Museum.</p>
+<aside>
+<p><strong>Why ten stops, not seven?</strong>
+Visit Astana counts seven exhibition halls plus an outdoor pavilion. This guide gives the atrium, the temporary-exhibitions hall and the outdoor area a page each, so the numbers differ between sources.</p>
+</aside>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3"><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="atrium.html"><img alt="Atrium with the bronze “Mangilik El” monument: five soldiers around a map in a carved stone frame, with warrior figures on either side" class="site-image img-fluid" height="212" loading="lazy" src="../images/thumbs/atrium-mangilik-el.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">1. Atrium “Mangilik El”</h3>
+
+<p>The heart of the building: a bronze monument that links ancient warriors with today’s armed forces.</p>
+<p><a href="atrium.html">Open the page</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="ancient.html"><img alt="Warrior figure in scale armour with a long spear, a round shield with a golden winged creature, and bows" class="site-image img-fluid" height="210" loading="lazy" src="../images/thumbs/armoured-warrior-spear.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">2. Antiquity – XIX Century</h3>
+
+<p>Armour, bows, helmets and a horse burial from the military world of the steppe.</p>
+<p><a href="ancient.html">Open the page</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="20th.html"><img alt="Display titled “Stalingrad” with photographs, a map, helmets and field equipment behind glass" class="site-image img-fluid" height="208" loading="lazy" src="../images/thumbs/stalingrad-case.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">3. Military History of the XX Century</h3>
+
+<p>The Alash period, the Great Patriotic War and the war in Afghanistan.</p>
+<p><a href="20th.html">Open the page</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="modern.html"><img alt="Wide view of the reconstructed office with a wooden desk, green chairs, blue curtains and the Kazakh flag" class="site-image img-fluid" height="212" loading="lazy" src="../images/thumbs/officer-office-b.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">4. Armed Forces of Kazakhstan</h3>
+
+<p>From the creation of the armed forces in 1992 to the modern land, air-defence and naval forces.</p>
+<p><a href="modern.html">Open the page</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="tank.html"><img alt="Large relief map behind a red rope, with model tanks among painted battle lines and dates" class="site-image img-fluid" height="212" loading="lazy" src="../images/thumbs/relief-map-tanks.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">5. History of Tank Troops</h3>
+
+<p>Armoured warfare, a relief battle map and an interactive presentation.</p>
+<p><a href="tank.html">Open the page</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="weapons.html"><img alt="Glass case with machine guns, automatic rifles, a long anti-tank rifle and a shell, beside photographs of soldiers" class="site-image img-fluid" height="212" loading="lazy" src="../images/thumbs/machine-guns-case.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">6. Weapons of the XX–XXI Centuries</h3>
+
+<p>Machine guns, anti-tank weapons, aviation equipment and models of military technology.</p>
+<p><a href="weapons.html">Open the page</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="formations.html"><img alt="Second World War display case with rows of soldiers’ portraits, rifles, a helmet and documents" class="site-image img-fluid" height="210" loading="lazy" src="../images/thumbs/wwii-heroes-case.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">7. Military Formations and Units</h3>
+
+<p>How divisions and brigades were raised in Kazakhstan, and how their stories are studied.</p>
+<p><a href="formations.html">Open the page</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="arts.html"><img alt="Framed oil painting of a soldier in a greatcoat and boots against a snowy background" class="site-image img-fluid" height="317" loading="lazy" src="../images/thumbs/portrait-greatcoat.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">8. Visual Arts</h3>
+
+<p>Paintings, graphics and sculpture on the theme of defending the homeland.</p>
+<p><a href="arts.html">Open the page</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="temporary.html"><img alt="Blue banner above the museum entrance reading “Әскери-тарихи музей” and “Военно-исторический музей”" class="site-image img-fluid" height="209" loading="lazy" src="../images/thumbs/entrance-banner.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">9. Temporary Exhibitions</h3>
+
+<p>A changing programme of special collections in a dedicated hall.</p>
+<p><a href="temporary.html">Open the page</a></p>
+</div></article></div><div class="col"><article class="card h-100 museum-card"><a class="card-img-top" href="outdoor.html"><img alt="Surface-to-air missile launcher with four missiles pointing into a cloudy sky" class="site-image img-fluid" height="210" loading="lazy" src="../images/thumbs/sam-launcher.jpg" width="320"/></a><div class="card-body">
+<h3 class="card-title">10. Outdoor Military Equipment</h3>
+
+<p>Missiles, boats and armoured vehicles displayed in the open air.</p>
+<p><a href="outdoor.html">Open the page</a></p>
+</div></article></div></div>
+
+
+
+
+
+
+
+
+
+</section>
+<section class="content-section mb-5">
+<div class="table-responsive my-3"><table class="table table-striped table-bordered align-middle">
+<caption>Main exhibition areas</caption>
+<thead>
+<tr>
+<th scope="col">No.</th>
+<th scope="col">Exhibition</th>
+<th scope="col">Main theme</th>
+<th scope="col">Page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">1</th>
+<td>Atrium “Mangilik El”</td>
+<td>Historical continuity and military heritage</td>
+<td><a href="atrium.html">Open hall</a></td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td>Antiquity – XIX Century</td>
+<td>Ancient weapons, archaeology and military traditions</td>
+<td><a href="ancient.html">Open hall</a></td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td>Military History of the XX Century</td>
+<td>Alash period, World War II and Afghanistan</td>
+<td><a href="20th.html">Open hall</a></td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td>Armed Forces of Kazakhstan</td>
+<td>Formation and development of independent Kazakhstan’s Armed Forces</td>
+<td><a href="modern.html">Open hall</a></td>
+</tr>
+<tr>
+<th scope="row">5</th>
+<td>History of Tank Troops</td>
+<td>Armoured forces and tank warfare</td>
+<td><a href="tank.html">Open hall</a></td>
+</tr>
+<tr>
+<th scope="row">6</th>
+<td>Weapons of the XX–XXI Centuries</td>
+<td>Small arms, military technology and weapon models</td>
+<td><a href="weapons.html">Open hall</a></td>
+</tr>
+<tr>
+<th scope="row">7</th>
+<td>Military Formations and Units</td>
+<td>Military organisations and service formations</td>
+<td><a href="formations.html">Open hall</a></td>
+</tr>
+<tr>
+<th scope="row">8</th>
+<td>Visual Arts</td>
+<td>Painting, graphics and sculpture</td>
+<td><a href="arts.html">Open hall</a></td>
+</tr>
+<tr>
+<th scope="row">9</th>
+<td>Temporary Exhibitions</td>
+<td>Changing exhibitions and special collections</td>
+<td><a href="temporary.html">Open hall</a></td>
+</tr>
+<tr>
+<th scope="row">10</th>
+<td>Outdoor Military Equipment</td>
+<td>Large-scale military technology</td>
+<td><a href="outdoor.html">Open area</a></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section class="content-section mb-5">
+<h2 class="h2 border-bottom pb-2 mb-3">A suggested visitor route</h2>
+<p>The halls are arranged chronologically, so the simplest plan is to follow them in order.</p>
+<ol>
+<li><strong><a href="atrium.html">Start at the entrance and atrium</a></strong><br/>Meet the “Mangilik El” monument under the dome.</li>
+<li><strong><a href="ancient.html">Explore ancient military history</a></strong><br/>Armour, bows and a horse burial from the steppe.</li>
+<li><strong><a href="20th.html">Continue to the twentieth century</a></strong><br/>Alash, the Great Patriotic War and Afghanistan.</li>
+<li><strong><a href="modern.html">Learn about the Armed Forces of independent Kazakhstan</a></strong><br/>Land, air-defence and naval forces.</li>
+<li><strong><a href="tank.html">Visit the tank and weapons exhibitions</a></strong><br/>A relief battle map, machine guns and a field gun.</li>
+<li><strong><a href="arts.html">Finish with visual arts, temporary exhibitions and the outdoor equipment area</a></strong><br/>Then step outside to the missiles, boats and armoured vehicles.</li>
+</ol>
+</section>
+</article>
+</main>
+<!-- Why: contacts are repeated in the footer of every page so a visitor never has to go back to the visit page to find the phone number -->
+<footer class="site-footer py-4"><div class="container"><div class="row g-4"><section class="col-12 col-md-4"><h2>Military-Historical Museum</h2><address>
+Armed Forces of the Republic of Kazakhstan<br/>
+Republic Square area, Astana, Kazakhstan<br/>
+Phone: <a href="tel:+77172919035">+7 (7172) 91-90-35</a>
+</address></section><nav aria-label="Footer navigation" class="col-12 col-md-4"><!-- This row is nested inside a footer column; the nested grid aligns links without changing the semantic footer navigation. --><h2>Explore</h2><ul class="row row-cols-2 g-2 list-unstyled">
+<li class="col"><a class="d-block" href="index.html">Home</a></li>
+<li class="col"><a class="d-block" href="about.html">About the Museum</a></li>
+<li class="col"><a class="d-block" href="exhibits.html">Halls &amp; Exhibitions</a></li>
+<li class="col"><a class="d-block" href="gallery.html">Gallery</a></li>
+<li class="col"><a class="d-block" href="history.html">Military History</a></li>
+<li class="col"><a class="d-block" href="visit.html">Plan a Visit</a></li>
+<li class="col"><a class="d-block" href="colophon.html">About the Project</a></li>
+</ul></nav><section class="col-12 col-md-4"><h2>Good to know</h2><p>Open Tuesday–Sunday, 10:00–18:00 (closed Monday). Admission 500 ₸. Please call ahead before you travel.</p><p><small>© 2026 Askarova Zeinep. An independent educational website — not the official website of the museum.</small></p></section></div></div></footer>
+<p class="back-top-wrap position-fixed bottom-0 end-0 m-3"><a class="btn btn-outline-secondary shadow-sm back-to-top" href="#top">Back to top ↑</a></p><script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
